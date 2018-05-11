@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HYContainerView" id="XmS-5V-RkA" customClass="HYContainerView" customModule="Nehao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D6N-D8-czf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="XmS-5V-RkA" id="Pky-Ky-RL8"/>
+                            <outlet property="delegate" destination="XmS-5V-RkA" id="HcE-Iw-gm0"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="D6N-D8-czf" firstAttribute="leading" secondItem="XmS-5V-RkA" secondAttribute="leading" id="A2b-eO-yh6"/>
+                <constraint firstItem="D6N-D8-czf" firstAttribute="top" secondItem="XmS-5V-RkA" secondAttribute="top" id="ITg-xF-JaP"/>
+                <constraint firstAttribute="bottom" secondItem="D6N-D8-czf" secondAttribute="bottom" id="csu-E3-Xf1"/>
+                <constraint firstAttribute="trailing" secondItem="D6N-D8-czf" secondAttribute="trailing" id="ioO-Cz-ldg"/>
+            </constraints>
+            <connections>
+                <outlet property="tblProductList" destination="D6N-D8-czf" id="woh-FN-8iI"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
