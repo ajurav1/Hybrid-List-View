@@ -12,6 +12,12 @@
 		B74FB57B209B2D0B00AC6B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74FB579209B2D0B00AC6B46 /* Main.storyboard */; };
 		B74FB57D209B2D0B00AC6B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74FB57C209B2D0B00AC6B46 /* Assets.xcassets */; };
 		B74FB580209B2D0B00AC6B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74FB57E209B2D0B00AC6B46 /* LaunchScreen.storyboard */; };
+		B74FB58E209B2E1C00AC6B46 /* HYContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74FB58A209B2E1C00AC6B46 /* HYContainerView.xib */; };
+		B74FB58F209B2E1C00AC6B46 /* HYContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74FB58B209B2E1C00AC6B46 /* HYContainerView.swift */; };
+		B74FB590209B2E1C00AC6B46 /* HybridListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74FB58C209B2E1C00AC6B46 /* HybridListView.swift */; };
+		B74FB591209B2E1C00AC6B46 /* HybridListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74FB58D209B2E1C00AC6B46 /* HybridListView.xib */; };
+		B74FB593209B30D800AC6B46 /* TransactionTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74FB592209B30D800AC6B46 /* TransactionTypeCell.swift */; };
+		B74FB595209B453100AC6B46 /* TransactionTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74FB594209B453100AC6B46 /* TransactionTypeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		B74FB57C209B2D0B00AC6B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74FB57F209B2D0B00AC6B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B74FB581209B2D0B00AC6B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74FB58A209B2E1C00AC6B46 /* HYContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYContainerView.xib; sourceTree = "<group>"; };
+		B74FB58B209B2E1C00AC6B46 /* HYContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContainerView.swift; sourceTree = "<group>"; };
+		B74FB58C209B2E1C00AC6B46 /* HybridListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridListView.swift; sourceTree = "<group>"; };
+		B74FB58D209B2E1C00AC6B46 /* HybridListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HybridListView.xib; sourceTree = "<group>"; };
+		B74FB592209B30D800AC6B46 /* TransactionTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTypeCell.swift; sourceTree = "<group>"; };
+		B74FB594209B453100AC6B46 /* TransactionTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionTypeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		B74FB574209B2D0B00AC6B46 /* goal */ = {
 			isa = PBXGroup;
 			children = (
+				B74FB588209B2E1C00AC6B46 /* HybridListView */,
 				B74FB575209B2D0B00AC6B46 /* AppDelegate.swift */,
 				B74FB577209B2D0B00AC6B46 /* ViewController.swift */,
 				B74FB579209B2D0B00AC6B46 /* Main.storyboard */,
@@ -62,6 +75,27 @@
 				B74FB581209B2D0B00AC6B46 /* Info.plist */,
 			);
 			path = goal;
+			sourceTree = "<group>";
+		};
+		B74FB588209B2E1C00AC6B46 /* HybridListView */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB594209B453100AC6B46 /* TransactionTypeCell.xib */,
+				B74FB592209B30D800AC6B46 /* TransactionTypeCell.swift */,
+				B74FB589209B2E1C00AC6B46 /* tableContainer */,
+				B74FB58C209B2E1C00AC6B46 /* HybridListView.swift */,
+				B74FB58D209B2E1C00AC6B46 /* HybridListView.xib */,
+			);
+			path = HybridListView;
+			sourceTree = "<group>";
+		};
+		B74FB589209B2E1C00AC6B46 /* tableContainer */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB58A209B2E1C00AC6B46 /* HYContainerView.xib */,
+				B74FB58B209B2E1C00AC6B46 /* HYContainerView.swift */,
+			);
+			path = tableContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +160,9 @@
 				B74FB580209B2D0B00AC6B46 /* LaunchScreen.storyboard in Resources */,
 				B74FB57D209B2D0B00AC6B46 /* Assets.xcassets in Resources */,
 				B74FB57B209B2D0B00AC6B46 /* Main.storyboard in Resources */,
+				B74FB591209B2E1C00AC6B46 /* HybridListView.xib in Resources */,
+				B74FB595209B453100AC6B46 /* TransactionTypeCell.xib in Resources */,
+				B74FB58E209B2E1C00AC6B46 /* HYContainerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74FB590209B2E1C00AC6B46 /* HybridListView.swift in Sources */,
+				B74FB58F209B2E1C00AC6B46 /* HYContainerView.swift in Sources */,
 				B74FB578209B2D0B00AC6B46 /* ViewController.swift in Sources */,
+				B74FB593209B30D800AC6B46 /* TransactionTypeCell.swift in Sources */,
 				B74FB576209B2D0B00AC6B46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

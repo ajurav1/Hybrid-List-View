@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol HybridListViewDataSource:class {
     //table view DataSource
@@ -184,5 +185,10 @@ extension HybridListView: HYContainerViewDelegate,HYContainerViewDataSource{
     //table view Delegate
     func hyContainerView(_ sender: HYContainerView, didSelectItemAt indexPath: IndexPath, headerSection:Int){
         delegate?.hybridListView(self, didSelectItemInContainer: indexPath, headerSection: headerSection)
+    }
+}
+extension UIView {
+    class func loadFromNib(named name: String, bundle: Bundle? = nil) -> UIView? {
+        return UINib(nibName: name, bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as? UIView
     }
 }

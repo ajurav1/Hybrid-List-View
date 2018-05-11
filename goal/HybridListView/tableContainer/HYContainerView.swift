@@ -4,11 +4,12 @@
  
  import UIKit
  
- protocol HYContainerViewDelegate: YAViewDelegate{
+ 
+ protocol HYContainerViewDelegate: class{
     func hyContainerView(_ sender: HYContainerView, didSelectItemAt indexPath: IndexPath, headerSection:Int)
  }
  
- protocol HYContainerViewDataSource: YAViewDelegate{
+ protocol HYContainerViewDataSource: class{
     func hyContainerView(_ sender: HYContainerView, numberOfItemsInSection section: Int, headerSection:Int) -> Int
     func hyContainerView(_ sender: HYContainerView, cellForItemAt indexPath: IndexPath, headerSection:Int, tableView:UITableView) -> UITableViewCell
  }
