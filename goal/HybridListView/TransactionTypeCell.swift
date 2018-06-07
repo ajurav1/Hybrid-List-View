@@ -3,7 +3,7 @@
 //  Nehao
 //
 //  Created by Ajay Kumar on 10/10/17.
-//  Copyright © 2017 Amit Tripathi. All rights reserved.
+//  Copyright © 2017 Ajay Kumar. All rights reserved.
 //
 
 import UIKit
